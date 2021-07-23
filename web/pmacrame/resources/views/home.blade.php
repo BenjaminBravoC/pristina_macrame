@@ -5,6 +5,7 @@
         <div class="col-12 col-md-6 col-lg-5 mx-auto">
             <div class="card">
                 <div class="card-header">
+                    <i class="fas fa-address-book fa-2x"></i>
                     <span>Bienvenido Prístina!</span>
                 </div>
                 <div class="card-body">
@@ -14,12 +15,12 @@
                     <nav class="redes-sociales pt-3">
                         <ul>
                             <li>
-                                <a target="_blank"href="https://facebook.com">
+                                <a target="_blank"href="https://www.facebook.com/pristina.macrame/">
                                     <img src="img/facebook.png" alt="facebook-logo">
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://instagram.com">
+                                <a target="_blank" href="https://www.instagram.com/pristina.macrame/">
                                     <img src="img/instagram.png" alt="instagram-logo">
                                 </a>
                             </li>
@@ -29,4 +30,7 @@
             </div>
         </div>
     </div>
+@endsection
+@section("javascript")
+    <script src="{{asset('js/index.js')}}"></script>
 @endsection

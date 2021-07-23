@@ -20,7 +20,7 @@
             </div>
             <div class="mb-3">
               <label for="precio-txt" class="form-label">Precio</label>
-              <input type="number" min="0" class="form-control" id="anio-txt">
+              <input type="number" min="0" class="form-control" id="precio-txt">
             </div>
             <div class="mb-3">
                 <label class="form-label" for="descripcion-txt">Descripción</label>
@@ -34,4 +34,10 @@
       </div>
     </div>
   </div>
+@endsection
+@section("javascript")
+  <script src="{{asset('js/servicios/productosService.js')}}"></script>
+  <script src="{{asset('js/index.js')}}"></script>
+  <script src="{{asset('js/agregar_prod.js')}}"></script>
+
 @endsection

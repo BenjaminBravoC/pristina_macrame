@@ -3,6 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+//importar
+use App\Http\Controllers\ProductosController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,3 +20,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get("categorias/get", [ProductosController::class, "getCategorias"]);
+
+//Para productos
+Route::get("productos/get", [ProductosController::class, "getProductos"]);
+
+Route::post("productos/post", [ProductosController::class, "crearProducto"]);

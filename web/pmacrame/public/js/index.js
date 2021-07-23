@@ -13,3 +13,22 @@ tinymce.init({
         'removeformat | help',
     content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
 });
+
+const cargarCategorias = async()=>{
+    
+    let resultado = await axios.get("api/categorias/get");
+    let categorias = resultado.data
+    let categoriaSelect = document.querySelector("#categoria-select");
+
+    categorias.forEach(c=>{
+        let option = document.createElement("option");
+        option.innerText = c;
+        categoriaSelect.appendChild(option);
+    });
+
+
+};
+
+document.addEventListener("DOMContentLoaded", ()=>{
+    cargarCategorias();
+});

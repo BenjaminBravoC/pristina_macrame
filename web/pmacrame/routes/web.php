@@ -17,8 +17,11 @@ Route::view("/", "home")->name("home");
 Route::view("/agregar_producto", "agregar_producto")->name("agregar_producto");
 Route::view("/ver_productos", "ver_productos")->name("ver_productos");
 
-Route::view("/agregar_cliente", "agregar_cliente")->name("agregar_cliente");
-Route::view("/ver_clientes", "ver_clientes")->name("ver_clientes");
+Route::view("/agregar_contacto", "agregar_contacto")->name("agregar_contacto");
+Route::view("/ver_contactos", "ver_contactos")->name("ver_contactos");
 
-Route::view("/agregar_proveedor", "agregar_proveedor")->name("agregar_proveedor");
-Route::view("/ver_proveedores", "ver_proveedores")->name("ver_proveedores");
+Route::view("/agregar_material", "agregar_material")->name("agregar_material");
+Route::view("/ver_materiales", "ver_materiales")->name("ver_materiales");
+
+Route::view("/agregar_venta", "agregar_venta")->name("agregar_venta");
+Route::view("/ver_ventas", "ver_ventas")->name("ver_ventas");
