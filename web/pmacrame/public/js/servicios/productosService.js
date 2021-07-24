@@ -1,7 +1,12 @@
 //Operaciones típicas para comunicarse con el controlador
 //getProductos
-const getProductos = async()=>{
-    let resp = await axios.get("api/productos/get");
+const getProductos = async(filtro = "todos")=>{
+    let resp;
+    if(filtro == "todos"){
+        resp = await axios.get("api/productos/get");
+    }else{
+        resp = await axios.get(`api/productos/filtrar?filtro=${filtro}`);
+    }
     return resp.data;
 };
 

@@ -23,7 +23,7 @@
               <input type="number" min="0" class="form-control" id="precio-txt">
             </div>
             <div class="mb-3">
-                <label class="form-label" for="descripcion-txt">Descripción</label>
+                <label class="form-label" for="descripcion-txt">Descripción y/o URL de Imagen</label>
                 <textarea id="descripcion-txt"></textarea>
             </div>
           </div>
@@ -37,6 +37,7 @@
 @endsection
 @section("javascript")
   <script src="{{asset('js/servicios/productosService.js')}}"></script>
+  <script src="{{asset('js/servicios/categoriasService.js')}}"></script>
   <script src="{{asset('js/index.js')}}"></script>
   <script src="{{asset('js/agregar_prod.js')}}"></script>
 

@@ -15,9 +15,7 @@ tinymce.init({
 });
 
 const cargarCategorias = async()=>{
-    
-    let resultado = await axios.get("api/categorias/get");
-    let categorias = resultado.data
+    let categorias = await getCategorias();
     let categoriaSelect = document.querySelector("#categoria-select");
 
     categorias.forEach(c=>{

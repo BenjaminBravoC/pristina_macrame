@@ -26,6 +26,13 @@ class ProductosController extends Controller
         return $productos;
     }
 
+    public function filtrarProductos(Request $request){
+        $input = $request->all();
+        $filtro = $input["filtro"];
+        $productos = Producto::where("categoria", $filtro)->get();
+        return $productos;
+    }
+
     public function crearProducto(Request $request){
         //Funcion que registra un producto en la BD
         $input = $request->all();

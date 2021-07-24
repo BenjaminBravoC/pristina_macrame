@@ -1,4 +1,17 @@
 
+const cargarCategorias = async()=>{
+    let filtroCtg = document.querySelector("#filtro-ctg");
+    let categorias = await getCategorias();
+
+    categorias.forEach(c=>{
+        let option = document.createElement("option");
+        option.innerText = c;
+        option.value = c;
+        filtroCtg.appendChild(option);
+    });
+
+};
+
 const iniciarEliminacion = async function(){
     let id = this.idProducto;
     let resp = await Swal.fire({
@@ -16,7 +29,7 @@ const iniciarEliminacion = async function(){
             Swal.fire("Error", "No se pudo procesador la solicitud de eliminación", "error");
         }
     }else{
-        Swal.fire("Cancelado", "Usted ha cancelado la eliminación")
+        Swal.fire("Cancelado", "Usted ha cancelado la eliminación");
     }
 };
 
@@ -64,8 +77,15 @@ const cargarTabla = (productos)=>{
     }
 };
 
+document.querySelector("#filtro-ctg").addEventListener("change", async()=>{
+    let filtro = document.querySelector("#filtro-ctg").value;
+    let productos = await getProductos(filtro);
+    cargarTabla(productos);
+});
+
 
 document.addEventListener("DOMContentLoaded", async()=>{
+    await cargarCategorias();
     let productos = await getProductos();
     cargarTabla(productos);
 });

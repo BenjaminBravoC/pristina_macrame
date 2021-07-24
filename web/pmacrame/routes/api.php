@@ -25,6 +25,7 @@ Route::get("categorias/get", [ProductosController::class, "getCategorias"]);
 
 //Para productos
 Route::get("productos/get", [ProductosController::class, "getProductos"]);
+Route::get("productos/filtrar", [ProductosController::class, "filtrarProductos"]);
 
 Route::post("productos/post", [ProductosController::class, "crearProducto"]);
 Route::post("productos/delete", [ProductosController::class, "eliminarProducto"]);
