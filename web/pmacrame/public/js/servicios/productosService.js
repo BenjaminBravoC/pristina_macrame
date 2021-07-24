@@ -14,3 +14,16 @@ const crearProducto = async(producto)=>{
     });
     return resp.data;
 };
+
+const eliminarProducto = async(id)=>{
+    try{
+        let resp = await axios.post("api/productos/delete", {id},{
+            headers:{
+                "Content-Type": "application/json"
+            }
+        });
+        return resp.data == "ok";
+    }catch(e){
+        return false;
+    }
+};

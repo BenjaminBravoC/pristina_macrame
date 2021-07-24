@@ -13,7 +13,7 @@ document.querySelector("#registrar-btn").addEventListener("click", async()=>{
 
     let res = await crearProducto(producto);
 
-    Swal.fire("Producto ingresado", "Operación realizada con éxito","success");
+    await Swal.fire("Producto ingresado", "Operación realizada con éxito","success");
 
     window.location.href = "ver_productos";
 });
