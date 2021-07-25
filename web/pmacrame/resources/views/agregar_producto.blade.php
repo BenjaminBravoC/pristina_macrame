@@ -6,6 +6,7 @@
     <div class="col-12 col-md-6 col-lg-5 mx-auto">
       <div class="card">
         <div class="card-header bg-primary text-white">
+          <i class="fas fa-box fa-1x"></i>
           <span>Agregar Producto</span>
         </div>
 
@@ -23,7 +24,7 @@
               <input type="number" min="0" class="form-control" id="precio-txt">
             </div>
             <div class="mb-3">
-                <label class="form-label" for="descripcion-txt">Descripción y/o URL de Imagen</label>
+                <label class="form-label" for="descripcion-txt">Descripción y/o Imagen</label>
                 <textarea id="descripcion-txt"></textarea>
             </div>
           </div>

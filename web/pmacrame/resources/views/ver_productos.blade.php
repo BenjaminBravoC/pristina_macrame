@@ -5,6 +5,7 @@
         <div class="col-12 col-md-6 col-lg-5 mx-auto">
             <div class="card">
                 <div class="card-header bg-info">
+                    <i class="fas fa-filter fa-1x"></i>
                     <span>Filtrar</span>
                 </div>
                 <div class="card-body">

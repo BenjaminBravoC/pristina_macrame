@@ -53,7 +53,7 @@ const cargarTabla = (productos)=>{
         tdCategoria.innerText = productos[i].categoria;
 
         let tdPrecio = document.createElement("td");
-        tdPrecio.innerText = productos[i].precio;
+        tdPrecio.innerText = "$ " + productos[i].precio;
 
         let tdDescripcion = document.createElement("td");
         tdDescripcion.innerHTML = productos[i].descripcion;

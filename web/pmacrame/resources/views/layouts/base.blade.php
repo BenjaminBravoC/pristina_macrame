@@ -25,9 +25,11 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
+                  <i class="fas fa-home fa-1x"></i>
                   <a class="nav-link active" aria-current="page" href="{{route('home')}}">Inicio</a>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-box fa-1x"></i>
                       Productos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -37,6 +39,7 @@
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-address-card fa-1x"></i>
                       Contactos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -46,6 +49,7 @@
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-pencil-alt fa-1x"></i>
                       Materiales
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -55,6 +59,7 @@
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-money-check-alt fa-1x"></i>
                       Ventas
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
