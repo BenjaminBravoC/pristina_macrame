@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductosController;
 //importar contactos
 use App\Http\Controllers\ContactosController;
+//importar materiales
+use App\Http\Controllers\MaterialesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +27,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get("categorias/get", [ProductosController::class, "getCategorias"]);
 Route::get("tipos/get", [ContactosController::class, "getTipos"]);
+Route::get("tipo/get", [MaterialesController::class, "getTipo"]);
 
 //Para productos
 Route::get("productos/get", [ProductosController::class, "getProductos"]);
@@ -39,3 +42,10 @@ Route::get("contactos/filtrar", [ContactosController::class, "filtrarContactos"]
 
 Route::post("contactos/post", [ContactosController::class, "crearContacto"]);
 Route::post("contactos/delete", [ContactosController::class, "eliminarContacto"]);
+
+//Para materiales
+Route::get("materiales/get", [MaterialesController::class, "getMateriales"]);
+Route::get("materiales/filtrar", [MaterialesController::class, "filtrarMateriales"]);
+
+Route::post("materiales/post", [MaterialesController::class, "crearMaterial"]);
+Route::post("materiales/delete", [MaterialesController::class, "eliminarMaterial"]);
